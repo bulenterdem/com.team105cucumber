@@ -71,10 +71,10 @@ public class AmazonStepdefinitions {
     }
 
     @Then("amazon arama kutusuna {string} yazip aratir")
-    public void amazonAramaKutusunaYazipAratir(String aranacakKelime) {
+    public void amazonAramaKutusunaYazipAratir(String arananurun) {
 
         amazonPage= new AmazonPage();
-        amazonPage.amazonAramaKutusu.sendKeys(aranacakKelime + Keys.ENTER);
+        amazonPage.amazonAramaKutusu.sendKeys(arananurun + Keys.ENTER);
 
     }
 
@@ -100,5 +100,12 @@ public class AmazonStepdefinitions {
         String actualUrl= Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(actualUrl.contains(arananKelime));
     }
+
+
+    @And("acilan tum sayfalari kapatir")
+    public void acilanTumSayfalariKapatir() {
+
+        Driver.quitDriver();
     }
+}
 
