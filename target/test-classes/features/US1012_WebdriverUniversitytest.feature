@@ -1,6 +1,6 @@
 
   Feature: US1012 Window testi
-@wip
+
     Scenario: TC17 Kullanici Window yeni acilan window'u test edebilmeli
 
       Given kullanici "wduUrl" anasayfaya gider

@@ -10,7 +10,7 @@ Feature: Kullanici yanlis bilgilerle giris yapamaz
     And  password kutusuna "qdGecersizPassword" yazar
     Then login butonuna basar
     And  giris yapilamadigini test eder
-    Then sayfayi kapatir
+
 
   Scenario: TC11 Gecersiz kullanici adi ve  gecerli sifre ile negatif Login Testi
 
@@ -20,7 +20,7 @@ Feature: Kullanici yanlis bilgilerle giris yapamaz
     And  password kutusuna "qdGecerliPassword" yazar
     Then login butonuna basar
     And  giris yapilamadigini test eder
-    Then sayfayi kapatir
+
 
   Scenario: TC12 Gecersiz kullanici adi ve  gecersiz sifre ile negatif Login Testi
 
@@ -30,4 +30,3 @@ Feature: Kullanici yanlis bilgilerle giris yapamaz
     And  password kutusuna "qdGecersizPassword" yazar
     Then login butonuna basar
     And  giris yapilamadigini test eder
-    Then sayfayi kapatir

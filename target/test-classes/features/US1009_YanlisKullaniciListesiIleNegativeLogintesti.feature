@@ -10,7 +10,7 @@
       And 2 saniye bekler
       And login butonuna basar
       And giris yapilamadigini test eder
-      Then sayfayi kapatir
+
 
       Examples:
 

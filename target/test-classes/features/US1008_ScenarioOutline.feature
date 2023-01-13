@@ -9,7 +9,7 @@
       Given kullanici "amazonUrl" anasayfaya gider
       Then amazon arama kutusuna "<arananurun>" yazip aratir
       And arama sonuclarinin "<arananurun>" icerdigini test eder
-      Then sayfayi kapatir
+
 
 
 

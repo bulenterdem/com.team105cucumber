@@ -10,6 +10,6 @@ Feature: US1011 Kullanici herouapp sayfasinda butonlari gorunur oldugunu test ed
     And  Delete butonunun gorunur oldugunu test eder
     Then Delete butonuna basarak butonu siler
     And  Delete butonunun gorunmedigini test eder
-    And sayfayi kapatir
+
 
 
