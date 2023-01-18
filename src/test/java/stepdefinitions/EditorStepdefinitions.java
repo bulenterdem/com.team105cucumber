@@ -7,7 +7,6 @@ import org.openqa.selenium.Keys;
 import pages.EditorPage;
 
 public class EditorStepdefinitions {
-
     EditorPage editorPage= new EditorPage();
     @Then("new butonuna basar")
     public void new_butonuna_basar() {

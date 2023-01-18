@@ -5,41 +5,44 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions (
-        plugin={"html:target/cucumber-reports1-p1.html",
+@CucumberOptions(
+      plugin={"html:target/cucumber-reports-p1.html",
                 "json:target/json-reports/cucumberp1.json",
                 "junit:target/xml-report/cucumberp1.xml"
-        },
-      features = "src/test/resources/features",
-        glue = "stepdefinitions",
-        tags = "@p1",
-        dryRun = false
+      },
+      features = "src/test/resources/features" ,
+      glue = "stepdefinitions" ,
+      tags= "@p1",
+      dryRun = false
 )
 
 public class ParalelRunner1 {
+    /*
+        Cucumber'da Runner class'i bos bir class'tir
+        Runner class'ini diger class'lardan farkli kilan
+        ve TestNG'deki xml dosyalari gibi calismasini saglayan
+        2 adet notasyon mevcuttur
 
-      /*
-           Cucumber da Runner class'i bos bir class'tir.
-           Runner class'ini diger class'lardan farkli kilan ve
-           TestNG 'deki gibi xml dosyalari gibi calismasini saglayan
-           2 adet notasyon mevcuttur
+        @RunWith notasyonu projemize cucumber junit dependency eklememizin sebebibidir
+        bu sayede runner class'larimiz cucumber ile calisir
 
-           @RunWith notasyonu projemizde cucumber  junit dependecy eklememizin sebebidir.
-           bu sayede runner  class'larimiz cucumber ile calisir
-           @ Cucumber options notasyonu ile istedigimiz ozellikleri runner class'ina ekleyebiliriz
-           Raporlama gibi ekstra optionlari da ileride ekleyecegiz
-           Ancak oncelikli gorevi feautres dosyalari ile stepdefinitions da bulunan java methodlarini
-           ilisiklendirmektir
+        @CucumberOptions notasyonu ile istedigimiz ozellikleri Runner class'ina ekleyebiliriz
+        Raporlama gibi ekstra option'lari da ileride ekleyecegiz
+        Ancak
+        oncelikli gorevi features dosyalari ile stepdefinitions'da bulunan
+        Java method'larini ilisiklendirmektir
 
-           tags : features klasoru icersinde yazilan tag(lri) aratip buldugu tum feature veya senaryolari
-           calistirir
+        tags : features classoru icerisinde yazilan tag(lari) aratip
+        buldugu tum feature veya scenario'lari calistirir
 
-           dryRun : iki deger alabilir
-                true secilirse verilen tag ile isaretli olan feature veya scenario daki eksik stepdefinitionlari
-           bulup ilgili methodlari olusturur hic bir sekilde testimizi calistirmaz eksik adim
-           yoksa test pass olarak isaretler
+        dryRun : iki deger alabilir
+        true : secilirse, verilen tag ile isaretli olan Feature veya Scenario'daki
+                eksik stepdefinitions'lari bulup
+                ilgili method'lari olusturur
+                Hic bir sekilde testimizi calistirmaz
+                eksik adim yoksa test passed olarak isaretler
 
-                false secilirse verilen tag ile isaretlenen feature veya Scenario'lari calistirir
-
-       */
+        false : secilirse, verilen tag ile isaretlenen
+                Feature veya Scenario'lari calistirir
+     */
 }

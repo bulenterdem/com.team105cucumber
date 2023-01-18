@@ -6,7 +6,6 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class WebUniversityPage {
-
     public WebUniversityPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
@@ -26,6 +25,4 @@ public class WebUniversityPage {
 
     @FindBy(xpath = "//h1[text()='CONTACT US']")
     public WebElement contactUsLinki;
-
-
 }

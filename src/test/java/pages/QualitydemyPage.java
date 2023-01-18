@@ -6,12 +6,8 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class QualitydemyPage {
-
-   public QualitydemyPage(){
-
-       PageFactory.initElements(Driver.getDriver(),this);
-
-
+    public QualitydemyPage(){
+        PageFactory.initElements(Driver.getDriver(),this);
     }
 
     @FindBy(xpath = "//*[text()='Log in']")
@@ -28,6 +24,4 @@ public class QualitydemyPage {
 
     @FindBy(linkText = "My courses")
     public WebElement basariliGirisCoursesLinki;
-
-
 }

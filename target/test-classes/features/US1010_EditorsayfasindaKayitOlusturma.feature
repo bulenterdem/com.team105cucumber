@@ -18,12 +18,15 @@ Feature: US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur
     When kullanici "<firstName>" ile arama yapar
     Then isim bolumunde "<firstName>" oldugunu dogrular
     And 3 saniye bekler
-
+    Then sayfayi kapatir
 
     Examples:
-      |firstName  |lastName |position |office   |Extension   |startDate   |salary |
-      |Ilker      |Bulut    |QA       |Istanbul |levent      |2021-10-01  |20000  |
-      |Hikmet     |Can      |QA       |Ankara   |kizilay     |2021-08 01  |25000  |
-      |Mehmet     |Saglam   |QA       |Izmir    |Konak       |2022-02-01  |22000  |
-      |Sule       |ulus     |QA       |Istanbul |Kadikoy     |2023-01-01  |26000  |
-      |Meryem     |Toprak   |QA       |Istanbul |levent      |2022-01-01  |20000  |
+    |firstName  |lastName |position |office   |Extension   |startDate   |salary |
+    |Ilker      |Bulut    |QA       |Istanbul |levent      |2021-01-01  |20000  |
+    |Ramazan    |Can      |QA lead  |Ankara   |Kizilay     |2021-10-01  |25000  |
+    |Sule       |Saglam   |Test lead|Izmir    |Konak       |2022-02-02  |23000  |
+    |Yasar      |U        |QA       |Istanbul |Kadikoy     |2023-01-01  |25000  |
+    |Meryem     |Toprak   |QA lead  |Istanbul |levent      |2022-11-11  |20000  |
+
+
+
