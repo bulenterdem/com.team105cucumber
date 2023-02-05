@@ -1,6 +1,6 @@
 Feature: US1014 Automation exercise sitesinde kullanici olusturma
 
-  @wip
+
   Scenario: TC19 Kullanici automation excercise sayfasinda kullanici olusturabilmeli
 
   Given kullanici "automationUrl" anasayfaya gider
